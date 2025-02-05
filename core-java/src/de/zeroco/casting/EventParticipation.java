@@ -1,4 +1,4 @@
-package de.zeroco.collections;
+package de.zeroco.casting;
 
 import java.util.ArrayList;
 import java.util.Arrays;

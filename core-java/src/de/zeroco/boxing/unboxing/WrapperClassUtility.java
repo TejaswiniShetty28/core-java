@@ -7,9 +7,9 @@ public class WrapperClassUtility {
 		System.out.println(convertToInt(20));
 		System.out.println(convertToFloat(20.0f));
 		System.out.println(convertToLong(20L));
-		System.out.println(convertToByte((byte)20));
-		System.out.println(convertToShort((short)20));
-		System.out.println(convertToChar('a'));
+//		System.out.println(convertToByte((byte)20));
+//		System.out.println(convertToShort((short)20));
+//		System.out.println(convertToChar('a'));
 		System.out.println(parseToInt("123"));
 		System.out.println(parseToFloat("20.0"));
 		System.out.println(parseToDouble("202.0"));
@@ -36,13 +36,13 @@ public class WrapperClassUtility {
 		return number.shortValue();
 	}
 	
-	public static byte convertToByte(Byte number) {
-		return number.byteValue();
-	}
-	
-	public static char convertToChar(Character alphabet) {
-		return alphabet.charValue();
-	}
+//	public static byte convertToByte(Byte number) {
+//		return number.byteValue();
+//	}
+//	
+//	public static char convertToChar(Character alphabet) {
+//		return alphabet.charValue();
+//	}
 	
 	public static boolean convertToBoolean(Boolean value) {
 		return value.booleanValue();

@@ -142,11 +142,11 @@ public class ListOperation {
     }
 	
     public static void main(String[] args) {
-		List<Integer> list = new ArrayList<Integer>(Arrays.asList(2, 2, 3, 3, 4, null, 8));
+		List<Integer> list = new ArrayList<Integer>(Arrays.asList(2, 2, 3, 3, 4, null));
 		try {
 			System.out.println(splitAndArrange((list)));
 		} catch (IllegalArgumentException e) {
-			e.printStackTrace();
+			System.out.println("Error: " + e.getMessage());
 		}
 	}
 }

@@ -36,22 +36,22 @@ public class VectorUtility {
 	     vector.clear();
 	 }
 
-	 public static void main(String[] args) {
-	     Vector<String> vector = new Vector<>();
-	     addElement(vector, "Apple");
-	     addElement(vector, "Banana");
-	     addElement(vector, "Cherry");
-	     System.out.println("Vector: " + vector);
-	     System.out.println("Vector size: " + getSize(vector));
-	     System.out.println("Element at index 1: " + getElement(vector, 1));
-	     addElementAtIndex(vector, 1, "Blueberry");
-	     System.out.println("Vector after adding Blueberry at index 1: " + vector);
-	     setElementAtIndex(vector, 2, "Cantaloupe");
-	     System.out.println("Vector after setting index 2 to Cantaloupe: " + vector);
-	     removeElementAtIndex(vector, 0);
-	     System.out.println("Vector after removing element at index 0: " + vector);
-	     System.out.println("Is the Vector empty? " + isEmpty(vector));
-	     clearVector(vector);
-	     System.out.println("Vector after clearing: " + vector);
-	 }
+//	 public static void main(String[] args) {
+//	     Vector<String> vector = new Vector<>();
+//	     addElement(vector, "Apple");
+//	     addElement(vector, "Banana");
+//	     addElement(vector, "Cherry");
+//	     System.out.println("Vector: " + vector);
+//	     System.out.println("Vector size: " + getSize(vector));
+//	     System.out.println("Element at index 1: " + getElement(vector, 1));
+//	     addElementAtIndex(vector, 1, "Blueberry");
+//	     System.out.println("Vector after adding Blueberry at index 1: " + vector);
+//	     setElementAtIndex(vector, 2, "Cantaloupe");
+//	     System.out.println("Vector after setting index 2 to Cantaloupe: " + vector);
+//	     removeElementAtIndex(vector, 0);
+//	     System.out.println("Vector after removing element at index 0: " + vector);
+//	     System.out.println("Is the Vector empty? " + isEmpty(vector));
+//	     clearVector(vector);
+//	     System.out.println("Vector after clearing: " + vector);
+//	 }
 }

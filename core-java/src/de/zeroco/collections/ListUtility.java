@@ -6,38 +6,6 @@ import java.util.List;
 
 public class ListUtility {
 
-//    public static void main(String[] args) {
-//        List<String> list = new ArrayList<>();
-//        List<String> secondList = new ArrayList<>();
-//        LinkedList<String> fifthList = new LinkedList<>();
-//        list.add("i");
-//        list.add("am");
-//        list.add("Tejaswini");
-//        secondList.add("i");
-//        secondList.add("work");
-//        secondList.add("at");
-//        System.out.println(addAllElements(list, secondList));
-//        System.out.println(getElement(list, 3));
-//        System.out.println(setElement(list, 3, " "));
-//        System.out.println(createSubList(list, 2, 5));
-//        System.out.println(removeElements(list, "code"));
-//        System.out.println(removeElements(list, "Teju"));
-//        System.out.println(checkSize(list));
-//        System.out.println(isEmpty(list));
-//        System.out.println(retainAllElements(list, secondList));
-//        System.out.println(clearElements(list));
-//        System.out.println(isEmpty(list));
-//        createList(fifthList, "Albert");
-//        createList(fifthList, "Albert");
-//        createList(fifthList, "Albert");
-//        System.out.println("Fifth List after adding element at the start: " + setElementAtStart(fifthList, "Dave"));
-//        System.out.println("Fifth List after adding element at the last: " + setElementAtLast(fifthList, "Dave"));
-//        System.out.println("Fifth List after removing the first element: " + removeFirstElement(fifthList));
-//        System.out.println("Fifth List after removing the last element: " + removeLastElement(fifthList));
-//        System.out.println("First element in the fifth list: " + getFirstElement(fifthList));
-//        System.out.println("Fifth List after polling the first element: " + showAndDeleteFirstElement(fifthList));
-//    }
-
     public static List<String> addAllElements(List<String> list, List<String> secondList) {
     	list.addAll(secondList);
     	return list;
