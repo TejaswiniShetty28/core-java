@@ -26,10 +26,10 @@ public class ListOperation {
 	 * @return A new list where odd numbers are placed at even indices and even numbers are placed at odd indices.
 	 * @reviewed by Naresh.G
 	 */
-	public static List<Integer> sortEvenOddByIndex(List<Integer> list) {
+	public static List<Integer> arrangeOddEvenByIndex(List<Integer> list) {
 	    if (list == null) return new ArrayList<>(); 
-	    List<Integer> evenNumbers = new ArrayList<>();
 	    List<Integer> oddNumbers = new ArrayList<>();
+	    List<Integer> evenNumbers = new ArrayList<>();
 	    List<Integer> newList = new ArrayList<>();
 	    for (Integer number : list) {
 	        if (number == null) continue;
@@ -39,14 +39,15 @@ public class ListOperation {
 	            oddNumbers.add(number);
 	        }
 	    }
-	    int evenIndex = 0;
-	    int oddIndex = 0;
+	    int oddNumberIndex = 0;
+	    int evenNumberIndex = 0;
 	    int size = oddNumbers.size();
 	    int length = evenNumbers.size();
-	    while (oddIndex < size || evenIndex < length) {
-	        newList.add(oddIndex < size ? oddNumbers.get(oddIndex++) : null);
-	        newList.add(evenIndex < length ? evenNumbers.get(evenIndex++) : null);
+	    while (oddNumberIndex < size || evenNumberIndex < length) {
+	        newList.add(oddNumberIndex < size ? oddNumbers.get(oddNumberIndex++) : null);
+	        newList.add(evenNumberIndex < length ? evenNumbers.get(evenNumberIndex++) : null);
 	    }
+	    
 	    return newList;
 	}
 
@@ -61,30 +62,30 @@ public class ListOperation {
 	 */
 	public static List<Integer> splitAndArrange(List<Integer> list) {
 	    if (list == null) return new ArrayList<>();
-	    List<Integer> filteredList = new ArrayList<>();
+	    List<Integer> newList = new ArrayList<>();
 	    for (Integer number : list) {
 	        if (number != null) {
-	            filteredList.add(number);
+	            newList.add(number);
 	        }
 	    }
-	    int size = filteredList.size();
+	    int size = newList.size();
 	    if (size == 0 || size % 2 != 0) throw new IllegalArgumentException("Provide Even Value Index");
 	    int mid = size / 2;
 	    for (int i = 0; i < mid - 1; i++) {
 	        for (int j = 0; j < mid - i - 1; j++) {
-	            if (filteredList.get(j) < filteredList.get(j + 1)) {
-	                swap(filteredList, j, j + 1);
+	            if (newList.get(j) < newList.get(j + 1)) {
+	                swap(newList, j, j + 1);
 	            }
 	        }
 	    }
 	    for (int i = mid; i < size - 1; i++) {
 	        for (int j = mid; j < size - (i - mid) - 1; j++) {
-	            if (filteredList.get(j) > filteredList.get(j + 1)) {
-	                swap(filteredList, j, j + 1);
+	            if (newList.get(j) > newList.get(j + 1)) {
+	                swap(newList, j, j + 1);
 	            }
 	        }
 	    }
-	    return filteredList;
+	    return newList;
 	}
 
 	/**
@@ -140,13 +141,4 @@ public class ListOperation {
         }
         return false;
     }
-	
-    public static void main(String[] args) {
-		List<Integer> list = new ArrayList<Integer>(Arrays.asList(2, 2, 3, 3, 4, null));
-		try {
-			System.out.println(splitAndArrange((list)));
-		} catch (IllegalArgumentException e) {
-			System.out.println("Error: " + e.getMessage());
-		}
-	}
 }
