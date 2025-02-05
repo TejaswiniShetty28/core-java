@@ -1,7 +1,11 @@
 package de.zeroco.main;
 
+import java.util.Arrays;
 import java.util.Collection;
+import java.util.List;
 import java.util.regex.Pattern;
+
+import de.zeroco.collections.ListOperation;
 public class Utility {
 
 	public static final int TAX_DEDUCTION = 150;
@@ -99,7 +103,7 @@ public class Utility {
 //	    } catch (IllegalArgumentException e) {
 //			System.out.println("Exception caught: " + e.getMessage());
 //		}
-//		System.out.println(listOperation.geometricProgression(2, 3, 6));
+		System.out.println("hi");
 	}
 
 	/**
